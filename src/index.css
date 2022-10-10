@@ -1,13 +1,342 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "primereact/resources/themes/lara-light-indigo/theme.css";
+@import "primereact/resources/primereact.min.css";
+@import "primeicons/primeicons.css";
+
+html,
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Barlow Semi Condensed", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: theme("colors.baseColor");
+  width: 100%;
+  height: 100vh;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@layer components {
+  #Header-score {
+    @apply w-[90%] sm:w-[90%] md:w-[80%] lg:w-[60%] rounded-xl border-[3px] border-headerOutline p-3 sm:p-3 md:p-4 lg:p-4 flex items-center justify-between relative;
+  }
+
+  .option-list span {
+    @apply block text-white tracking-tight mb-0 text-sm lg:text-base leading-4;
+  }
+
+  .option-tile {
+    @apply cursor-pointer w-[100px] h-[100px] sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[120px] rounded-full absolute flex items-center justify-center;
+  }
+
+  .selected-tile {
+    @apply cursor-pointer w-[135px] h-[135px] md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] relative rounded-full flex items-center justify-center;
+  }
+
+  .option-tile img,
+  .selected-tile img {
+    @apply relative z-[3] w-[35%];
+  }
+
+  #play-game-section {
+    @apply h-[400px] sm:h-[300px] md:h-[500px] lg:h-[450px] w-full md:w-[100%] lg:w-[60%] p-5 mt-5;
+  }
+}
+
+#Home .game-welcome-container {
+  background: url("./assets/images/bg-pentagon.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.option-tile::after,
+.selected-tile::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  height: 70%;
+  background: #fff;
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  box-shadow: theme("boxShadow.shadow-inner-custom");
+}
+
+.option-tile.scissor-tile,
+.selected-tile.scissor-tile {
+  background: theme("colors.scrissorGradient");
+}
+
+.option-tile.spock-tile,
+.selected-tile.spock-tile {
+  background: theme("colors.spockGradient");
+}
+
+.option-tile.lizard-tile,
+.selected-tile.lizard-tile {
+  background: theme("colors.lizardGradient");
+}
+
+.option-tile.rock-tile,
+.selected-tile.rock-tile {
+  background: theme("colors.rockGradient");
+}
+
+.option-tile.paper-tile,
+.selected-tile.paper-tile {
+  background: theme("colors.paperGradient");
+}
+
+.p-dialog .p-dialog-header .p-dialog-title {
+  color: theme("colors.scoreText");
+}
+
+.p-dialog-footer {
+  padding: 10px !important;
+}
+
+.p-dialog-header {
+  padding: 19px !important;
+}
+
+#play-game-section {
+  display: grid;
+}
+
+#tile-placeholder {
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  background: hsl(237, 49%, 15%);
+}
+
+#play-game-section .user-selected {
+  grid-area: user-selected;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#play-game-section .computer-selected {
+  grid-area: computer-selected;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#play-game-section .result-announce {
+  grid-area: result-announce;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* EXTRA SMALL SCREEN*/
+@media (min-width: 320px) {
+  #Home .game-welcome-container {
+    background-size: 70%;
+  }
+
+  .option-tile.scissor-tile {
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .option-tile.spock-tile {
+    top: 67px;
+    left: 13px;
+  }
+
+  .option-tile.lizard-tile {
+    top: 202px;
+    left: 44px;
+  }
+
+  .option-tile.rock-tile {
+    top: 202px;
+    left: 70%;
+    transform: translateX(-50%);
+  }
+
+  .option-tile.paper-tile {
+    top: 67px;
+    left: 80%;
+    transform: translateX(-48%);
+  }
+
+  .p-dialog {
+    width: 95vw;
+  }
+
+  .p-dialog-footer {
+    text-align: center !important;
+  }
+
+  #play-game-section {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "user-selected computer-selected"
+      "result-announce result-announce";
+    gap: 40px;
+  }
+}
+
+/* SMALL SCREEN*/
+@media (min-width: 576px) {
+}
+
+/* MEDIUM SCREEN*/
+@media (min-width: 768px) {
+  #Home .game-welcome-container {
+    background-size: 70%;
+  }
+
+  .option-tile.scissor-tile {
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .option-tile.spock-tile {
+    top: 155px;
+    left: 28px;
+  }
+
+  .option-tile.lizard-tile {
+    top: 350px;
+    left: 102px;
+  }
+
+  .option-tile.rock-tile {
+    top: 350px;
+    left: 70%;
+    transform: translateX(-50%);
+  }
+
+  .option-tile.paper-tile {
+    top: 155px;
+    left: 80%;
+    transform: translateX(-48%);
+  }
+
+  .p-dialog {
+    width: 80vw;
+  }
+
+  .p-dialog-footer {
+    text-align: right !important;
+  }
+
+  #play-game-section {
+    grid-template-columns: 35% 30% 35%;
+    grid-template-areas: "user-selected result-announce computer-selected";
+    gap: 10px;
+  }
+
+  #play-game-section.waiting {
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "user-selected computer-selected";
+    gap: 0;
+  }
+}
+
+/* LARGE SCREEN*/
+@media (min-width: 1024px) {
+  #Home .game-welcome-container {
+    background-size: 50%;
+  }
+
+  .option-tile.scissor-tile {
+    top: 31px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .option-tile.spock-tile {
+    top: 150px;
+    left: 150px;
+  }
+
+  .option-tile.paper-tile {
+    top: 150px;
+    left: 72%;
+    transform: translateX(-48%);
+  }
+
+  .option-tile.lizard-tile {
+    top: 330px;
+    left: 200px;
+  }
+
+  .option-tile.rock-tile {
+    top: 330px;
+    left: 65%;
+    transform: translateX(-48%);
+  }
+
+  .p-dialog {
+    width: 40vw;
+  }
+
+  #play-game-section {
+    grid-template-columns: 40% 20% 40%;
+    grid-template-areas: "user-selected result-announce computer-selected";
+    gap: 20px;
+  }
+
+  #play-game-section.waiting {
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "user-selected computer-selected";
+    gap: 0;
+  }
+}
+
+/* EXTRA LARGE SCREEN*/
+@media (min-width: 1400px) {
+  #Home .game-welcome-container {
+    background-size: 35%;
+  }
+
+  .option-tile.scissor-tile {
+    top: 31px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .option-tile.spock-tile {
+    top: 150px;
+    left: 240px;
+  }
+
+  .option-tile.paper-tile {
+    top: 150px;
+    left: 68%;
+    transform: translateX(-60%);
+  }
+
+  .option-tile.lizard-tile {
+    top: 310px;
+    left: 284px;
+  }
+
+  .option-tile.rock-tile {
+    top: 310px;
+    left: 61%;
+    transform: translateX(-48%);
+  }
 }
