@@ -10,11 +10,7 @@ This is a solution to the [Rock, Paper, Scissors challenge on Frontend Mentor](h
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -38,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Project Solution](https://github.com/Stephen-Adom/rock-paper-scissor-lizard-spock-game)
+- Live Site URL: [App Live View](https://rock-paper-scissor-lizard-spock-game-seven.vercel.app/)
 
 ## My process
 
@@ -59,4 +55,4 @@ Users should be able to:
 
 - Frontend Mentor - [@Stephen-Adom](https://www.frontendmentor.io/profile/Stephen-Adom)
 - Twitter - [@Alaska67524884](https://twitter.com/Alaska67524884)
-- LinkedIn - [@Alaska67524884](https://www.linkedin.com/in/stephen-addae-a32334154/)
+- LinkedIn - [Stephen Addae](https://www.linkedin.com/in/stephen-addae-a32334154/)
