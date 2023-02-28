@@ -30,7 +30,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-## 📖 Personal Portfolio <a name="about-project"></a>
+## 📖 Project Overview <a name="about-project"></a>
 
 A full responsive react application with tailwind and prime react. A simple game where two users select hand gestures and each one wins, loses or draws with equal probability
 
