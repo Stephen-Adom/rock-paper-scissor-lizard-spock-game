@@ -33,7 +33,7 @@
 
 ## 📖 Project Overview <a name="about-project"></a>
 
-A full responsive react application with tailwind and prime react. A simple game where two users select hand gestures and each one wins, loses or draws with equal probability
+The rock, paper, scissors, spock game project is a web-based game that provides an interactive experience for users. Built using the React library, Tailwind CSS, PrimeReact, and TypeScript, the project offers a highly responsive and modern user interface. The game allows users to play the classic rock, paper, scissors game with the added twist of Spock and Lizard. Users play against the computer and also keeps track of scores for each player. The project also includes animation effects to enhance the gaming experience, making it a fun and engaging activity for users of all ages.
 
 ### Screenshot
 
