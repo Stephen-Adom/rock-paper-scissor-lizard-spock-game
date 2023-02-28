@@ -10,6 +10,7 @@
 ## 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
+  - [Screenshot](#screenshot)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
@@ -33,6 +34,13 @@
 ## 📖 Project Overview <a name="about-project"></a>
 
 A full responsive react application with tailwind and prime react. A simple game where two users select hand gestures and each one wins, loses or draws with equal probability
+
+### Screenshot
+
+![Deskop View 1](./src/assets/screenshots/desktop-1.png)
+![Deskop View 2](./src/assets/screenshots/desktop-2.png)
+![Mobile View 1](./src/assets/screenshots/mobile-view.png)
+![Mobile View 2](./src/assets/screenshots/mobile-view-2.png)
 
 ### 🛠 Built With <a name="built-with"></a>
 
