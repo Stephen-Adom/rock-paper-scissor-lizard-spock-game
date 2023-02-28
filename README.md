@@ -1,45 +1,42 @@
-# Frontend Mentor - Rock, Paper, Scissors solution
+<a name="readme-top"></a>
 
-This is a solution to the [Rock, Paper, Scissors challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+<div align="center">
+  <h1><b>Rock, Paper, Scissors Game</b></h1>
 
-## Table of contents
+</div>
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-- [Author](#author)
+<!-- TABLE OF CONTENTS -->
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+## 📗 Table of Contents
 
-## Overview
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
 
-### The challenge
+<!-- PROJECT DESCRIPTION -->
 
-Users should be able to:
+## 📖 Personal Portfolio <a name="about-project"></a>
 
-- View the optimal layout for the game depending on their device's screen size
-- Play Rock, Paper, Scissors against the computer
-- Maintain the state of the score after refreshing the browser _(optional)_
-- **Bonus**: Play Rock, Paper, Scissors, Lizard, Spock against the computer _(optional)_
+A full responsive react application with tailwind and prime react. A simple game where two users select hand gestures and each one wins, loses or draws with equal probability
 
-### Screenshot
+### 🛠 Built With <a name="built-with"></a>
 
-![Deskop View 1](./src/assets/screenshots/desktop-1.png)
-![Deskop View 2](./src/assets/screenshots/desktop-2.png)
-![Mobile View 1](./src/assets/screenshots/mobile-view.png)
-![Mobile View 2](./src/assets/screenshots/mobile-view-2.png)
-
-### Links
-
-- Solution URL: [Project Solution](https://github.com/Stephen-Adom/rock-paper-scissor-lizard-spock-game)
-- Live Site URL: [App Live View](https://rock-paper-scissor-lizard-spock-game-seven.vercel.app/)
-
-## My process
-
-### Built with
+#### Tech Stack <a name="tech-stack"></a>
 
 - Semantic HTML5 markup
 - CSS custom properties
@@ -51,8 +48,131 @@ Users should be able to:
 - [Tailwind](https://tailwindcss.com/) - React CSS Styles and Responsives
 - [PrimeReact](https://www.primefaces.org/primereact/) - For UI Component
 
-## Author
+<!-- Features -->
 
-- Frontend Mentor - [@Stephen-Adom](https://www.frontendmentor.io/profile/Stephen-Adom)
-- Twitter - [@Alaska67524884](https://twitter.com/Alaska67524884)
-- LinkedIn - [Stephen Addae](https://www.linkedin.com/in/stephen-addae-a32334154/)
+### Key Features <a name="key-features"></a>
+
+- **Overview Page**
+- **Rules Dialog**
+- **Result Display Section**
+
+<!-- GETTING STARTED -->
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+Here is a link to my project. You can view to show the output so far.
+
+- [Live Demo Link](https://rock-paper-scissor-lizard-spock-game-seven.vercel.app/)
+
+# 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+In order to run this project you need:
+
+<!--
+Example command:
+
+```sh
+ gem install rails
+```
+ -->
+
+### Setup
+
+Clone this repository to your desired folder:
+
+```sh
+  cd my-folder
+  git clone git@github.com/Stephen-Adom/rock-paper-scissor-lizard-spock-game.git
+```
+
+-
+
+### Install
+
+Install this project with:
+
+Example command:
+
+```sh
+  cd my-project
+  npm install
+```
+
+-
+
+### Usage
+
+To run the project, execute the following command:
+
+```sh
+  npm run start
+```
+
+-
+
+### Run tests
+
+To run tests, run the following command:
+
+<!--
+Example command:
+
+```sh
+  bin/rails test test/models/article_test.rb
+```
+--->
+
+### Deployment
+
+You can deploy this project using:
+
+<!--
+Example:
+
+```sh
+
+```
+ -->
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### 👥 Authors <a name="authors"></a>
+
+👤 **Stephen Addae**
+
+- GitHub: [@Stephen-Adom](https://github.com/Stephen-Adom)
+- Twitter: [@stephen_alaska](https://twitter.com/stephen_alaska)
+- LinkedIn: [Stephen Addae](https://www.linkedin.com/in/stephen-addae-a32334154/)
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **Profile Page**
+- [ ] **Registration Page**
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project, please provide suggestions to help improve this project
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank [CSS-tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) for guidance and knowledge on flexbox
+
+I would also like to thank [Frontend Mentor](https://www.frontendmentor.io/) for providing the project for me to work on
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
